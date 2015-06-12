@@ -11,22 +11,3 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
-# Use local configurations if available
-if [[ -s "$HOME/.zshrc.local" ]]; then
-    source $HOME/.zshrc.local
-fi
-
-export LANG=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
-export GREP_OPTIONS='--color=auto -n -H'
-export GREP_COLOR='1;31;35'
-export TERM=xterm-256color
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-bindkey '^[[1;5D' backward-word
-bindkey '^[[1;5C' forward-word
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

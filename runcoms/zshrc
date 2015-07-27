@@ -34,3 +34,5 @@ bindkey '^[[1;5C' forward-word
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
